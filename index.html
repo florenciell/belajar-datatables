@@ -494,7 +494,16 @@
     <script>
         $(document).ready(function(){
            $('#tabel-data').DataTable({
-           "pagingType": "simple"
+           "pagingType": "simple",
+           "ajax": "http://172.16.3.12:5500/employee",
+                "columns": [
+                    { "data": "name" },
+                    { "data": "position" },
+                    { "data": "office" },
+                    { "data": "age" },
+                    { "data": "start_date" },
+                    { "data": "salary" }
+                ]
             });
         });
     </script>
