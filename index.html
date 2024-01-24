@@ -17,7 +17,7 @@
                 <th>Name</th>
                 <th>Position</th>
                 <th>Office</th>
-                <th>Age</th>
+                <th>Ext</th>
                 <th>Start date</th>
                 <th>Salary</th>
                 <th>Action</th>
@@ -84,12 +84,12 @@
              }
         }],
            "pagingType": "simple",
-           "ajax": "http://172.16.3.12:5500/employee",
+           "ajax": "http://localhost:5555/employee",
                 "columns": [
                     { "data": "name" },
                     { "data": "position" },
                     { "data": "office" },
-                    { "data": "age" },
+                    { "data": "extn" },
                     { "data": "start_date" },
                     { "data": "salary" },
                     { render: function( data, type, row, meta ) {
